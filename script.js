@@ -2,7 +2,8 @@
 
 // Question-7:    WAP to input the distance between two cities (in km) , convert and print this distance in meter, feet, inches, and centimeter.
 
-const a = prompt("enter value in km")
+const a = prompt("enter distance in km")
+const paragraphElement = document.createElement('p');
+// document.body.appendChild(paragraphElement);
 
-const b = a * 1000
-console.log(b)
+paragraphElement.innerHTML += `in km: ${a*1000}, in cm: ${a*100000} `;
