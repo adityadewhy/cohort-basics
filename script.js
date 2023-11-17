@@ -44,6 +44,9 @@ document.body.appendChild(paragraphElement);
 
 
 // string concatenation
-const dayNumber1 = prompt('enter number from 1 to 7 first time: ');
-const dayNumber2 = prompt('enter number from 1 to 7 second time: ');
-paragraphElement.innerHTML = `concatenated string ${dayNumber1 + dayNumber2}`;
+// const dayNumber1 = prompt('enter number from 1 to 7 first time: ');
+// const dayNumber2 = prompt('enter number from 1 to 7 second time: ');
+// paragraphElement.innerHTML = `concatenated string ${dayNumber1 + dayNumber2}`;
+
+
+//do array questions
