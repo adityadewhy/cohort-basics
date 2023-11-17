@@ -4,6 +4,6 @@
 
 const a = prompt("enter distance in km")
 const paragraphElement = document.createElement('p');
-// document.body.appendChild(paragraphElement);
+document.body.appendChild(paragraphElement);
 
 paragraphElement.innerHTML += `in km: ${a*1000}, in cm: ${a*100000} `;
