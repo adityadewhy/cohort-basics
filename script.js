@@ -75,14 +75,30 @@ document.body.appendChild(paragraphElement);
 // console.log(factorial(num));
 
 //fog type function
-function name() {
-  paragraphElement.innerHTML += "aditya"
-  surname();
+// function name() {
+//   paragraphElement.innerHTML += "aditya"
+//   surname();
+// }
+// function surname() {
+//   paragraphElement.innerHTML += "sharma"
+// }
+// function fullName() {
+//   name(); 
+// }
+// fullName();
+
+//file-gistfile2-txt
+
+//Write a function that takes an array and a callback function. Apply the callback function to each element of the array and return a new array with the modified elements.
+let arr = [1,2,3,4];
+function arrFunc(arr, callback) {
+  callback(arr);
+  console.log(arr);
 }
-function surname() {
-  paragraphElement.innerHTML += "sharma"
+function handleCallback(arr){
+  for (let i = 0; i<arr.length ; i++){
+    arr[i]=arr[i]+2;
+  }
 }
-function fullName() {
-  name(); 
-}
-fullName();
+
+arrFunc(arr, handleCallback);
