@@ -64,12 +64,25 @@ document.body.appendChild(paragraphElement);
 // difference();
 
 //recursive function
-let num = prompt("factorial of what number? ");
-parseInt(num);
-function factorial(num) {
-  if (num === 0) {
-    return 1;
-  }
-  return num * factorial(num - 1);
+// let num = prompt("factorial of what number? ");
+// parseInt(num);
+// function factorial(num) {
+//   if (num === 0) {
+//     return 1;
+//   }
+//   return num * factorial(num - 1);
+// }
+// console.log(factorial(num));
+
+//fog type function
+function name() {
+  paragraphElement.innerHTML += "aditya"
+  surname();
 }
-console.log(factorial(num));
+function surname() {
+  paragraphElement.innerHTML += "sharma"
+}
+function fullName() {
+  name(); 
+}
+fullName();
