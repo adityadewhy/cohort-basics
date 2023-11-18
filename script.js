@@ -90,15 +90,24 @@ document.body.appendChild(paragraphElement);
 //file-gistfile2-txt
 
 //Write a function that takes an array and a callback function. Apply the callback function to each element of the array and return a new array with the modified elements.
-let arr = [1,2,3,4];
-function arrFunc(arr, callback) {
-  callback(arr);
-  console.log(arr);
-}
-function handleCallback(arr){
-  for (let i = 0; i<arr.length ; i++){
-    arr[i]=arr[i]+2;
-  }
-}
+// let arr = [1,2,3,4];
+// function arrFunc(arr, callback) {
+//   callback(arr);
+//   console.log(arr);
+// }
+// function handleCallback(arr){
+//   for (let i = 0; i<arr.length ; i++){
+//     arr[i]=arr[i]+2;
+//   }
+// }
+// arrFunc(arr, handleCallback);
 
-arrFunc(arr, handleCallback);
+//setTimeout
+// setTimeout(function(){
+//   paragraphElement.innerHTML += "hello";
+// }, 3000);
+
+setTimeout(callback, 3000);
+function callback (){
+  paragraphElement.innerHTML += "hello";
+}
