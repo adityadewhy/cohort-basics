@@ -49,4 +49,27 @@ document.body.appendChild(paragraphElement);
 // paragraphElement.innerHTML = `concatenated string ${dayNumber1 + dayNumber2}`;
 
 
-//do array questions
+//functions questions
+
+//difference between local and global scope
+// let globalVar = "global variable"
+// function difference() {
+//   let localVar = "local variable"
+//   console.log(globalVar);
+//   console.log(localVar);
+// }
+// console.log(globalVar);
+// console.log(localVar);
+
+// difference();
+
+//recursive function
+let num = prompt("factorial of what number? ");
+parseInt(num);
+function factorial(num) {
+  if (num === 0) {
+    return 1;
+  }
+  return num * factorial(num - 1);
+}
+console.log(factorial(num));
